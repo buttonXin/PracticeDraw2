@@ -40,6 +40,9 @@ public class Practice16TextPathView extends View {
 
         canvas.drawText(text, 50, 200, paint);
 
+        //参数1 文字， 2 文字开始位置 ， 3 文字结束位置 ， 4 开始的x坐标 ，
+        // 5 开始的y坐标 ， 作用在哪个path上
+        paint.getTextPath(text ,0 , text.length() , 50 , 400  , textPath );
         canvas.drawPath(textPath, pathPaint);
     }
 }
